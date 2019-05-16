@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple HTML5 Page</title>
+  <!-- Bootstrap CSS file load from my local workplace -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <!-- my style CSS file load from my local workplace -->
+   <link rel="stylesheet" type="text/css" href="mystyle.css">
+   
+
+ <script>
+ /*  global $ */
+        $(document).ready(function () {
+            // Attach a click handler to the element: <p id="open">
+            $("#open").click(function () {
+                // Save the <p id="open"> and <form> elements in local variables.
+                var openElem = $(this);
+                var myform = $("#myform");
+
+                if (myform.css("display") == "none") {
+                    // If the form is currently not displayed,
+                    // slide it down into view, and when done add the "close" class to the
+                    // <p id="open"> element.
+                    myform.slideDown(300, function () {
+                        openElem.addClass("close");
+                    })
+                } else {
+                    // Otherwise, fade the login form out, and when done,
+                    // remove the "close" class from the <p id="open"> element.
+                    myform.fadeOut(600, function () {
+                        openElem.removeClass("close");
+                    })
+                }
+            });
+        }); // end ready
+    </script>
+
+<script type="text/javascript">
+function checkpass() {
+    var errormsg = "Password is incorrect";
+    var pass = document.myform.password.value;
+    
+    if (pass !== "tamer") {
+       var htmlOutput = "<b style='color: black;'>Password is incorrect!</b>";
+	document.getElementById("errorMsg").innerHTML = htmlOutput;
+         
+        document.myform.password.value = "";
+        document.myform.password.focus();
+        return false;
+   }
+    else
+        window.location='home.html';
+ 
+}
+function res() {
+document.getElementById("errorMsg").innerHTML = "";
+document.myform.password.focus();
+}
+</script>
+
+<style>
+#open {
+	margin: 0;
+	cursor: pointer;
+	background: rgb(255,255,255)  url(open.png) no-repeat 8px 7px;
+	color: rgb(58,80,123);
+
+}
+
+
+
+#open:hover {
+	color: rgb(0,0,0);
+	background-color: rgb(110,138,195);	
+	width: 300px;
+	text-align: center;
+}
+
+
+login input {
+	color:blue;
+
+
+
+}
+
+body{
+    text-align:center;
+  
+}
+
+ 
+
+</style>
+
+</head>
+
+<div id="login">
+<p id="open">Login</p>
+<form id="myform" name="myform" method="post">
+	
+	<p>
+		<label for="password">Password: </label>
+		<input type="password" name="password" id="password">
+	</p>
+	<p>
+		<input type="button" name="button" id="button" value="Submit" onclick="checkpass();">
+                <input type="reset" value="Reset" onclick="res()">
+	</p>
+</form>
+</div>
+
+
+
+<div id="checkpass">
+<div id="errorMsg"></div></div>
+
+     <footer>
+   <p>Your password is tamer</p>
+        <div><a href="mailto:tameribrahim@me.com">if you need help, please contact me</a>
+		</div>
+                <script type="text/javascript">
+		var dateModified = document.lastModified;
+	   mydate = dateModified.slice(0,16);
+		document.write("Last updated: " + mydate);
+		</script>
+</footer>
+</body>
+</html>

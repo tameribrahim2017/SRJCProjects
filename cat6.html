@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple HTML5 Page</title>
+  <!-- Bootstrap CSS file load from my local workplace -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <!-- my style CSS file load from my local workplace -->
+   <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+
+<body>
+ 
+   <!-- jQuery library file load from my local workplace -->
+   
+  <script src="bootstrap/js//jquery-3.2.1.min.js"></script>
+  
+  <!-- Bootstrap JavaScript load from my local workplace -->
+  <script src="bootstrap/js/bootstrap.js"></script>
+  
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=""></a>
+      <img src="pic/logo1.png" alt="logo2.png" style="width:100px;" >
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html">Home <span class="glyphicon glyphicon-home"></span></a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Catalog List<span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="cat1.html">Catalog Item 1 </a></li>
+        <li><a href="cat2.html">Catalog Item 2 </a></li>
+        <li><a href="cat3.html">Catalog Item 3 </a></li>
+        <li><a href="cat4.html">Catalog Item 4 </a></li>
+        <li><a href="cat5.html">Catalog Item 5 </a></li>
+        
+      </ul>
+    </li>
+    <li><a href="cat6.html">About & Credit <span class="glyphicon glyphicon-envelope"></span></a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+       
+       <button type="submit" class="btn btn-default">Search <span class="glyphicon glyphicon-search"></span></button>
+      
+    </form>
+  </div>
+</nav>
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+      <div class="col" style="background-color:lavenderblush;">   
+    <h1>FIND US</h1> 
+      <p><span class="glyphicon glyphicon-map-marker"></span>  CALIFORNIA, USA</p>
+      <p><span class="glyphicon glyphicon-phone"></span>  Phone: +00 12121212</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>  Email: contactme@mail.com</p>
+<iframe src="https://snazzymaps.com/embed/27259" width="100%" height="300px" style="border:double blue;"></iframe> 
+</div></div>
+<div class="container-fluid">
+<div class="col-md-6 col-sm-6 col-xs-12">   
+      <div class="col" style="background-color:lavender;">
+         <h1>CONTACT US</h1>
+           <form action="/action_page.php">
+     <input type="text" class="form-control" placeholder="First Name" required name="Name">
+ <input type="text" class="form-control" placeholder=" Last Name" required>
+      <input type="text" class="form-control" placeholder="Email Address" required>
+        <input type="text" class="form-control" placeholder="Phone Number" required>
+           <input type="text" class="form-control" placeholder="Home Address" required>
+           <textarea rows="6" cols="40" class="form-control" placeholder="Write Your Message"></textarea>
+         <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-envelope"></span> SEND</button>
+        </form>
+    </div>
+    </div>
+    </div> 
+  
+    
+    
+    <footer>
+        <div class="tato">
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Click for sources</button>
+  <div id="demo" class="collapse">     
+<a href="https://www.google.com/search?q=black+gradient+footer&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjRsv-ske3WAhVKlFQKHQQvAhgQ_AUICigB&biw=1280&bih=542#imgrc=gFLXb56GoH1oxM:">Footer source</a><br>
+<a href="https://www.google.com/search?q=san+francisco+images&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwicsPv-vc3WAhUG8WMKHUu9DEMQ7AkIQA&biw=1280&bih=590#imgrc=objUkuR_XqTO8M:"> Photos Gallery Source</a><br>
+<a href="https://www.google.com/search?q=background+image&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwiMwYbu9PDWAhXmhFQKHSuCAGwQ7AkIPw&biw=1280&bih=590&dpr=1.25#imgrc=9wLuzCrSL_8d4M:"> Background Source</a><br>
+<a href="mailto:tameribrahim@me.com">Contact Me</a>
+		</div>
+		 </div>
+                <script type="text/javascript">
+		var dateModified = document.lastModified;
+		/* global mydate */
+	   mydate = dateModified.slice(0,16);
+		document.write("Last updated: " + mydate);
+		</script>
+</footer>
+
+</body>
+</html>

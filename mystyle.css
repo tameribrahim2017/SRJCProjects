@@ -1,0 +1,240 @@
+
+  body
+  {
+      
+        font-size: 15px;
+        text-align: center;
+        
+  }
+  
+ 
+  
+  h1{
+      font-size: 35px;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 10px;
+      padding-top: 10px;
+     
+  }
+  
+  h2{
+   font-family: sans-serif;
+      color:white;
+      font-size: 40px;
+      text-align: center;
+       font-weight: bold;
+  
+  }
+  
+  h3{
+      text-align: center;
+      color: #e9e4ff;
+        font-weight: bold;
+      
+  }
+  /* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+    font-weight: bold;
+    background-color:gray;
+}
+
+/* mouse over link */
+.a:hover {
+    color: #13627c;
+   
+}
+
+/* selected link */
+.a:active {
+    color: orange;
+}
+  
+  
+  p{
+      text-align: left;
+      padding-left: 10px;
+  }
+  p1{
+      text-align:center;
+      font-size: 30px;
+  }
+  
+  footer{
+      color: white;
+      text-align: center;
+  }
+
+  .home-bkg{
+      background-image: url('pic/background.jpg');
+  }
+  
+   .cat-bkg{
+      background-color:#8b9dc3;
+  }
+  
+.tato{
+    background-color: white;
+    background-color:rgba(252,252,252,.6);
+    background-image: url('pic/footer.jpg');
+	height: 200px;
+	padding-top: 0px;
+}
+
+.booknow{
+   
+    background-image: url('pic/dubaibaner.jpg');
+    height:300px;
+
+
+
+}
+
+
+	.bold {
+	font-weight: bold;
+	}
+.italic {
+	font-style: italic;
+	}
+.underline {
+	text-decoration: underline;
+	}
+.font12 {
+    font-size: 12px;
+}
+	
+.font14 {
+    font-size: 14px;
+}
+.font18 {
+    font-size: 18px;
+}
+.font22 {
+    font-size: 22px;
+}
+.comicsans{
+	font-family: "Comicsans";
+}
+.helvetica{
+	font-family: "Helvetica";
+}
+.garamond{
+	font-family: "Garamond";
+}
+.red {
+    background-color: red;
+    color: white;
+   
+}
+.lightblue {
+    background-color: #e9e4ff;
+    color: black;
+}
+.lightgreen {
+    background-color: #b6fcd5;
+    color: black;
+}
+    
+.gray {
+    background-color:gray;
+}   
+.yellow{
+    background-color:yellow;
+}
+
+.panel-footer{
+    background-color: #13627c;
+    font-size:35px;
+  }  
+
+
+.form-control{
+     margin:10px;
+     border-radius:10px 10px;
+     width:80%;
+  }
+  
+
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 80%;
+      margin: auto;
+  }
+  
+   .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+      height:450px;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #fff; /* White */
+      color: #555555;
+  }
+ 
+  .li{
+     
+      color:#13627c;
+  }
+ 
+  
+  #fSize {
+       padding: 5px;
+       border: 10px solid gray;
+       text-align: left; 
+       margin: 0px auto;
+       
+           }
+           
+           .bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("pic/egypt5.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("pic/egypt6.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("pic/egypt7.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption .span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+

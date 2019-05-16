@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple HTML5 Page</title>
+  <!-- Bootstrap CSS file load from my local workplace -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <!-- my style CSS file load from my local workplace -->
+   <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+
+<body class="home-bkg">
+ 
+   <!-- jQuery library files load from my local workplace -->
+   
+  <script src="bootstrap/js//jquery-3.2.1.min.js"></script>
+
+  <!-- Bootstrap JavaScript files load from my local workplace -->
+  <script src="bootstrap/js/bootstrap.js"></script>
+ <!-- navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=""></a>
+      <img src="pic/logo1.png" alt="logo2.png" style="width:100px;" >
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html">Home <span class="glyphicon glyphicon-home"></span></a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Catalog List<span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="cat1.html">Catalog Item 1 </a></li>
+        <li><a href="cat2.html">Catalog Item 2 </a></li>
+        <li><a href="cat3.html">Catalog Item 3 </a></li>
+        <li><a href="cat4.html">Catalog Item 4 </a></li>
+        <li><a href="cat5.html">Catalog Item 5 </a></li>
+      </ul>
+    </li>
+    <li><a href="cat6.html">About & Credit <span class="glyphicon glyphicon-envelope"></span></a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+       
+       <button type="submit" class="btn btn-default">Search <span class="glyphicon glyphicon-search"></span></button>
+      
+    </form>
+  </div>
+</nav>
+
+ <!-- carousel -->
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="pic/sf.jpg" data-slide-to="0" class="active"></li>
+      <li data-target="pic/dubai.jpg" data-slide-to="1"></li>
+      <li data-target="pic/sf1.jpg" data-slide-to="2"></li>
+      <li data-target="pic/ny.jpg" data-slide-to="3"></li>
+      <li data-target="pic/egypt6.jpg.jpg" data-slide-to="4"></li>
+      <li data-target="pic/france.jpg" data-slide-to="5"></li>
+      <li data-target="pic/spain.jpg" data-slide-to="6"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active" >
+        <img src="pic/sf.jpg" alt="SF">
+        <div class="carousel-caption">
+         <h3>San Francisco</h3>
+      </div>
+      </div>
+
+      <div class="item">
+        <img src="pic/dubai.jpg" alt="dubai">
+        <div class="carousel-caption">
+         <h3>Dubai</h3>
+      </div>
+      </div>
+      
+      
+    
+      <div class="item">
+        <img src="pic/sf1.jpg" alt="SF">
+        <div class="carousel-caption">
+         <h3>San Francisco</h3>
+      </div>
+      </div>
+       <div class="item">
+        <img src="pic/ny.jpg" alt="NY">
+        <div class="carousel-caption">
+         <h3>New York City</h3>
+      </div>
+      </div>
+      <div class="item">
+        <img src="pic/egypt6.jpg" alt="Egypt">
+        <div class="carousel-caption">
+         <h3>Payramids of Gizza, Egypt</h3>
+      </div>
+      </div>
+      <div class="item">
+        <img src="pic/france.jpg" alt="france">
+        <div class="carousel-caption">
+         <h3>France</h3>
+      </div>
+      </div>
+      <div class="item">
+        <img src="pic/spain.jpg" alt="spain">
+        <div class="carousel-caption">
+         <h3>Spain</h3>
+      </div>
+      </div>
+    </div>
+    
+  
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<hr>
+<!-- Container (Packages Section) -->
+<div id="packages" class="container-fluid">
+  <div class="text-center">
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading"> 6 Days 7 Nights in France</div>
+        <div class="panel-body">
+          <img src="pic/france.jpg" alt="" style="width:100%;">
+        </div>
+        <div class="panel-footer">
+          <h2> Starts at $1500</h2>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading"> 9 Days 10 Nights in Dubai</div>
+         
+        
+        <div class="panel-body">
+          <img src="pic/dubai.jpg" alt="dubai" style="width:100%;">
+        </div>
+        <div class="panel-footer">
+         
+          <h2> Starts at $3000</h2>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">  5 Days 6 Nights in Spain </div>
+        
+        
+        <div class="panel-body">
+          <img src="pic/spain.jpg" alt="spain" style="width:100%;">
+          
+        </div>
+        <div class="panel-footer">
+        
+          <h2> Starts at $2000</h2>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+   <div class="container-fluid">
+  <ul class="pager">
+   
+    <li><a href="cat1.html">Next Page</a></li>
+  </ul>
+</div>
+ <!-- footer -->
+      <footer>
+        <div class="tato">
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Click for sources</button>
+  <div id="demo" class="collapse">     
+<a href="https://www.google.com/search?q=black+gradient+footer&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjRsv-ske3WAhVKlFQKHQQvAhgQ_AUICigB&biw=1280&bih=542#imgrc=gFLXb56GoH1oxM:">Footer source</a><br>
+<a href="https://www.google.com/search?q=san+francisco+images&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwicsPv-vc3WAhUG8WMKHUu9DEMQ7AkIQA&biw=1280&bih=590#imgrc=objUkuR_XqTO8M:"> Photos Gallery Source</a><br>
+<a href="https://www.google.com/search?q=background+image&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwiMwYbu9PDWAhXmhFQKHSuCAGwQ7AkIPw&biw=1280&bih=590&dpr=1.25#imgrc=9wLuzCrSL_8d4M:"> Background Source</a><br>
+<a href="mailto:tameribrahim@me.com">Contact Me</a>
+		</div>
+		 </div>
+                <script type="text/javascript">
+		var dateModified = document.lastModified;
+		/* global mydate */
+	   mydate = dateModified.slice(0,16);
+		document.write("Last updated: " + mydate);
+		</script>
+</footer>
+
+</body>
+</html>

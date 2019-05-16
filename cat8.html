@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple HTML5 Page</title>
+  <!-- Bootstrap CSS file load from my local workplace -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <!-- my style CSS file load from my local workplace -->
+   <link rel="stylesheet" type="text/css" href="mystyle.css">
+   
+ </head>
+ <body>
+   
+    <!-- jQuery library file load from my local workplace -->
+   
+  <script src="bootstrap/js//jquery-3.2.1.min.js"></script>
+  
+  <!-- Bootstrap JavaScript load from my local work[place -->
+  <script src="bootstrap/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+
+function fontSizeChanger(){
+var fSize = document.getElementById("fSize");
+/* global $ */
+var fontSize = $('#fontSize').val();
+fSize.className = fontSize;
+}
+
+function fontWeightChanger(x){
+var fSize = document.getElementById("fSize");	
+
+if(x == 0)
+	fSize.className = "bold";
+
+else if (x == 1)
+	fSize.className = "italic";
+
+else if (x == 2)
+	fSize.className = "underline";
+}
+
+function fontFamilyChanger(){
+var fSize = document.getElementById("fSize");
+
+var fontFamily = $('#fontFamily').val();
+fSize.className = fontFamily;	
+}
+
+function changeBG(x){
+
+if(x == 0)
+/* global fSize */
+	fSize.className = "red";
+
+else if (x == 1)
+	fSize.className = "lightblue";
+
+else if (x == 2)
+	fSize.className = "lightgreen";
+	
+else if (x == 3)
+	fSize.className = "gray";
+else if (x == 4)
+	fSize.className = "yellow";	
+}
+
+
+</script>
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=""></a>
+      <img src="pic/logo1.png" alt="logo2.png" style="width:100px;" >
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html">Home <span class="glyphicon glyphicon-home"></span></a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Catalog List<span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="cat1.html">Catalog Item 1 </a></li>
+        <li><a href="cat2.html">Catalog Item 2 </a></li>
+        <li><a href="cat3.html">Catalog Item 3 </a></li>
+        <li><a href="cat4.html">Catalog Item 4 </a></li>
+        <li><a href="cat5.html">Catalog Item 5 </a></li>
+      </ul>
+    </li>
+    <li><a href="cat6.html">About & Credit <span class="glyphicon glyphicon-envelope"></span></a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+       
+       <button type="submit" class="btn btn-default">Search <span class="glyphicon glyphicon-search"></span></button>
+      
+    </form>
+  </div>
+</nav>
+
+
+  
+      <div class="container">   
+     <div id="fSize">
+     <h1>Tamer Ibrahim</h1>    
+   <p>I am a Web Developer</p>
+      
+    </div></div> 
+    
+     <div class="col-md-6 col-sm-4 col-xs-12">   
+      <div class="col" style="background-color:lavender;">
+<div class="container">   
+        <h1>Select Font Size</h1>
+        <p class="width">
+        <select name="fontSize" id="fontSize" onchange="fontSizeChanger()" class="width100 center">
+        <option value="font12">12px</option>
+        <option value="font14">14px</option>
+        <option value="font18">18px</option>
+        <option value="font22">22px</option>
+        </select></p>
+        
+     
+     
+        <h1>Select Font Weight</h1>
+        <p>
+        <input type="radio" name="weight" onClick="fontWeightChanger(0)" value="b"> Bold
+        <input type="radio" name="weight" onClick="fontWeightChanger(1)" value="i"> Italic 
+        <input type="radio" name="weight" onClick="fontWeightChanger(2)" value="u"> Underline</p>
+       
+       
+
+
+        <h1>Select Font Family</h1>
+         <p class="width">
+        <select name="fontFamily" id="fontFamily" onChange="fontFamilyChanger()">
+        <option value="selected">Select One</option>
+        <option value="comicsans">Comic Sans MS</option>
+        <option value="helvetica">Helvetica</option>
+        <option value="garamond">Garamond</option>
+        </select></p>
+      
+    
+        <h1>Select Font Color</h1>
+              
+        <p>
+        <input type="button" value="Red" onClick="changeBG(0)" class="tag red">
+        <input type="button" value="Lightblue" onClick="changeBG(1)" class="tag lightblue">
+        <input type="button" value="Lightgreen" onClick="changeBG(2)" class="tag lightgreen">
+        <input type="button" value="Gray" onClick="changeBG(3)" class="tag gray">
+        <input type="button" value="yellow" onClick="changeBG(4)" class="tag yellow">
+        </p>
+     
+
+
+</div>
+</div>
+</div>
+    	  
+    
+  
+<div class="container">
+  <ul class="pager">
+    <li><a href="cat5.html">Next Page</a></li>
+  </ul>
+</div>
+	
+ <footer>
+<div class="tato">
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Click for sources</button>
+<div id="demo" class="collapse">     
+<a href="https://www.google.com/search?q=black+gradient+footer&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjRsv-ske3WAhVKlFQKHQQvAhgQ_AUICigB&biw=1280&bih=542#imgrc=gFLXb56GoH1oxM:">Footer source</a><br>
+<a href="https://www.google.com/search?q=san+francisco+images&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwicsPv-vc3WAhUG8WMKHUu9DEMQ7AkIQA&biw=1280&bih=590#imgrc=objUkuR_XqTO8M:"> Photos Gallery Source</a><br>
+<a href="https://www.google.com/search?q=background+image&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwiMwYbu9PDWAhXmhFQKHSuCAGwQ7AkIPw&biw=1280&bih=590&dpr=1.25#imgrc=9wLuzCrSL_8d4M:"> Background Source</a><br>
+<a href="mailto:tameribrahim@me.com">Contact Me</a>
+		</div>
+		 </div>
+                <script type="text/javascript">
+		var dateModified = document.lastModified;
+		/* global mydate */
+	   mydate = dateModified.slice(0,16);
+		document.write("Last updated: " + mydate);
+		</script>
+</footer>
+</body>
+</html>
